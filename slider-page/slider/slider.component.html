@@ -1,0 +1,7 @@
+<div class="SliderContent">
+    <label for="sliderBar">{{ this.title }}</label>
+    <input type="range" #slider id="sliderBar" [attr.min]="min" [attr.max]="max" [attr.step]="step" [attr.value]="value" (input)="showValue();"/>
+    <output for="sliderBar" #output>{{ this.value }}</output>
+</div>
+
+

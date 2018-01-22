@@ -1,0 +1,136 @@
+/* INPUT CSS */
+c3m-slider input[type=range] {
+    -webkit-appearance: none;
+    width: 30%;
+    margin: 8.8px 0;
+    display:inline-block;
+}
+    c3m-slider input[type=range]:focus {
+        outline: none;
+    }
+        c3m-slider input[type=range]::-webkit-slider-runnable-track {
+            width: 100%;
+            height: 8.4px;
+            cursor: pointer;
+            box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+            background: #bdbdbd;
+            border-radius: 1.3px;
+            border: 0.2px solid #010101;
+        }
+            c3m-slider input[type=range]::-webkit-slider-thumb {
+                box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.63), 0px 0px 0px rgba(13, 13, 13, 0.63);
+                border: 1px solid rgba(0, 0, 0, 0.28);
+                height: 26px;
+                width: 26px;
+                border-radius: 12px;
+                background: rgba(105, 105, 105, 0.97);
+                cursor: pointer;
+                -webkit-appearance: none;
+                margin-top: -9px;
+            }
+                c3m-slider input[type=range]:focus::-webkit-slider-runnable-track {
+                    background: #c2c2c2;
+                }
+                c3m-slider input[type=range]::-moz-range-track {
+                    width: 100%;
+                    height: 8.4px;
+                    cursor: pointer;
+                    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+                    background: #bdbdbd;
+                    border-radius: 1.3px;
+                    border: 0.2px solid #010101;
+                }
+                    c3m-slider input[type=range]::-moz-range-thumb {
+                        box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.63), 0px 0px 0px rgba(13, 13, 13, 0.63);
+                        border: 1px solid rgba(0, 0, 0, 0.28);
+                        height: 26px;
+                        width: 26px;
+                        border-radius: 12px;
+                        background: rgba(105, 105, 105, 0.97);
+                        cursor: pointer;
+                    }
+                        input[type=range]::-ms-track {
+                            width: 100%;
+                            height: 8.4px;
+                            cursor: pointer;
+                            background: transparent;
+                            border-color: transparent;
+                            color: transparent;
+                        }
+                        c3m-slider input[type=range]::-ms-fill-lower {
+                            background: #b8b8b8;
+                            border: 0.2px solid #010101;
+                            border-radius: 2.6px;
+                            box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+                        }
+                        c3m-slider input[type=range]::-ms-fill-upper {
+                            background: #bdbdbd;
+                            border: 0.2px solid #010101;
+                            border-radius: 2.6px;
+                            box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+                        }
+                            c3m-slider input[type=range]::-ms-thumb {
+                                box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.63), 0px 0px 0px rgba(13, 13, 13, 0.63);
+                                border: 1px solid rgba(0, 0, 0, 0.28);
+                                height: 26px;
+                                width: 26px;
+                                border-radius: 12px;
+                                background: rgba(105, 105, 105, 0.97);
+                                cursor: pointer;
+                                height: 8.4px;
+                            }
+                            c3m-slider input[type=range]:focus::-ms-fill-lower {
+                                background: #bdbdbd;
+                            }
+                            c3m-slider input[type=range]:focus::-ms-fill-upper {
+                                background: #c2c2c2;
+                            }
+ /* Label */
+c3m-slider label{
+    display: block;
+    margin: 0.6rem 0;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    color: #5d5555;
+}
+
+/* Output */
+c3m-slider output{
+    display: inline;
+    position: static;
+    font: 1.3rem "rotoboregular";
+    margin-left: 0.9rem;
+    vertical-align: middle;
+    text-transform: uppercase;
+}
+    c3m-slider.bubble output {
+        position: absolute;
+        background-color: dimgray;
+        width: 40px;
+        height: 30px;
+        text-align: center;
+        color: white;
+        border-radius: 10px;
+        display: inline-block;
+        bottom: -2.7rem;
+        left: 0;
+        margin-left:0;
+        transform: translate(-50%);
+    }
+        c3m-slider.bubble output:after {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-bottom: 10px solid dimgray;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            bottom: 100%;
+            left: 50%;
+            margin-left: -5px;
+            margin-top: -1px;
+        }
+c3m-slider .SliderContent{
+    position:relative;
+    margin-bottom: 3rem;
+}
