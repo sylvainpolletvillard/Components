@@ -8,34 +8,35 @@ import {Component, ElementRef, Input, AfterViewInit, ViewChild, ViewEncapsulatio
 })
 export class SliderComponent implements AfterViewInit {
 
+    /* INPUTS */
     @Input() min;
     @Input() max;
     @Input() step;
     @Input() value;
     @Input() title;
 
+    /* CHILDRENS */
     @ViewChild('slider') input: ElementRef;
     @ViewChild('output') output: ElementRef;
 
+    /* VARIABLES */
     isBubble: boolean;
-
     width: number;
     point: number;
     offset = 0;
     newPoint;
 
+    /* CONSTRUCTOR */
     constructor(private myComponent: ElementRef) { }
 
-   /* OnLoad */
-  ngAfterViewInit() {
-      console.log(this.value);
+   /* AFTER VIEW INIT */
+   ngAfterViewInit() {
       this.isBubble = this.myComponent.nativeElement.classList.contains('bubble');
+       // If contains Bubble class
       if (this.isBubble) {
           this.setPositionBubble();
       }
-
-  }
-
+   }
     /* Resize breakpoint tab */
     @HostListener('window:resize', ['$event'])
     onResize(event) {

@@ -5,9 +5,6 @@
       <h1 #focusable  id="{{dialogTitle}}" tabindex="0"> Modal Title </h1>
       <p id="{{dialogDescription}}">Modal content text</p>
 
-      <label for="inputTest">A simple text input</label>
-      <input type="text" id="inputTest">
-
       <button (click)="ToggleOpen()" (keydown.tab)="focusable.focus()" class="dialog-close" [attr.aria-label]="btnCloseLabel">&times;</button>
     </div>
 </div>

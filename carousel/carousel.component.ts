@@ -107,6 +107,7 @@ export class CarouselComponent implements OnInit, AfterViewInit {
         }
     }
 
+  /* Click on a previous button  */
   previous(group: CarouselItemComponent): void {
       const index = this.groups.indexOf(group);
       const lengthGroup = this.groups.length;
@@ -155,6 +156,7 @@ export class CarouselComponent implements OnInit, AfterViewInit {
       }
   }
 
+  /* Function to go on a specific item with Bullepoint Click Event */
   goTo(indexToGo: number, group: CarouselItemComponent, ): void {
 
       const random = Math.floor(Math.random() * 2 + 0);

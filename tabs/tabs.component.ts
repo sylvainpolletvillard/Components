@@ -1,5 +1,5 @@
 import { Component, ViewEncapsulation, Input, ElementRef, AfterViewInit, ViewChildren, QueryList, ChangeDetectorRef, HostListener } from '@angular/core';
-import { TabComponent } from './tab/tab.component';
+import { TabComponent } from './tabs-item/tabs-item.component';
 
 @Component({
   selector: 'c3m-tabs',
@@ -65,7 +65,7 @@ export class TabsComponent implements AfterViewInit {
 
 
   /* breakpoint tab */
-  ngAfterViewInit(){
+  ngAfterViewInit() {
 
     this.arrayTmp = this.tabsElement.toArray();
     for ( let i = 0; i < this.arrayTmp.length - 1; i ++ ) {
