@@ -2,21 +2,22 @@
 
 ALL THE CREAM NG COMPONENTS !  
 
-Work on Angular CLI version 1.3.1 
-
 COMPONENTS LIST
 =====================
 
 - Accordion
+- All Assets
 - Buttons :
    - Normal
    - Submit
    - Upload
+- Calendar
 - Carousel
-- Table 
 - Modal
-- Navbar
 - Pagination
+- Slider
+- Table
+- Step
 - Tabs
 
 
