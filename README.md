@@ -37,3 +37,8 @@ COMPONENTS LIST
 - Table-swipe
 - Table-toggle
 - Tabs
+- Toast
+- List
+- List-description
+- List-order
+- List-thumbnails
